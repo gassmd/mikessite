@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="pomodoro timer" content="width=device-width, initial-scale=1.0">
+    <meta author= Michael Gass github.com/thxfam">
+    <title>Pomodoro Timer</title>
+    <link href="https://fonts.googleapis.com/css?family=Turret+Road&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type = "text/javascript" src = "script.js"></script>
+
+</head>
+<body>
+    <div class ="page">
+        <h1>Mike G's Pomodoro Timer</h1> 
+        <script type = "text/javascript">
+            setInterval(displayclock, 500);
+            function displayClock(){
+                var time = new Date();
+                var hrs = time.getHours();
+                var min = time.getMinutes();
+                var sec = time.getSeconds();
+                
+                if (hrs > 12){
+                    hrs = hrs - 12;
+                }
+                
+                if (hrs == 0){
+                    hrs == 12;
+                }
+                
+                document.getELementById('clock').innerHTML = hrs + ':' + min + ':' + sec;</script>   
+        <h2>Current Time<br>
+            <span id ="clock"> Clockkk here </span>
+            
+        </h2>
+        
+        <img id = "tomatoImage" src= "https://grist.files.wordpress.com/2009/09/tomato.jpg" alt="tomato">
+        <br>
+        Select cycles
+        <select id="timeSelector">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+    </div>
+   
+</body>
+</html>
