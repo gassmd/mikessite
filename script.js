@@ -1,21 +1,20 @@
-var showCurrentTime = function()
-{
-    var clock = document.getElementById('clock'); 
-    var currentTime = new Date();
-    var h = currentTime.getHours(); 
-    var m = currentTime.getMinutes();
-    var s = currentTime.getSeconds();
-    m = checkTime(m);
-    s = checkTime(s); 
-    var clockTime = hours + ":" + minutes + ":" + seconds;
-    clock.innerText = clockTime; 
-}
 
-var updateClock = function(){
-    
-}
-
-function checkTime(i){
-    if(i<10) {i = "0" + i};
-    return i; 
-}
+        function startTime() {
+          var today = new Date();
+          var h = today.getHours();
+          var m = today.getMinutes();
+          var s = today.getSeconds();
+          m = checkTime(m);
+          s = checkTime(s);
+          document.getElementById('txt').innerHTML =
+          h + ":" + m + ":" + s;
+          var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+          return i;
+        }
+        startTime(); 
+        
+        
+        

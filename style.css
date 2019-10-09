@@ -1,7 +1,7 @@
 body{
-    background-color: rgb(82, 79, 79); 
+    background-color: rgb(168, 168, 168); 
     font-family: 'Turret Road', cursive;
-    color: rgb(168, 168, 168);
+    color: rgb(245, 245, 245);
 }
 
 .page{
@@ -27,10 +27,14 @@ h1 {
 h2 {
     font-size: 30px;
     font-family: 'Turret Road', cursive;
-    color: rgb(168, 168, 168);
+    color: rgb(255, 0, 0);
     
 }
 
 #clock{
     font-size: 40px;
+}
+
+.clock{
+    font-size: 100px;
 }

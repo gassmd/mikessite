@@ -8,33 +8,22 @@
     <link href="https://fonts.googleapis.com/css?family=Turret+Road&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type = "text/javascript" src = "script.js"></script>
-
-</head>
-<body>
+   
+<body onload=startTime()>
     <div class ="page">
         <h1>Mike G's Pomodoro Timer</h1> 
-        <script type = "text/javascript">
-            setInterval(displayclock, 500);
-            function displayClock(){
-                var time = new Date();
-                var hrs = time.getHours();
-                var min = time.getMinutes();
-                var sec = time.getSeconds();
-                
-                if (hrs > 12){
-                    hrs = hrs - 12;
-                }
-                
-                if (hrs == 0){
-                    hrs == 12;
-                }
-                
-                document.getELementById('clock').innerHTML = hrs + ':' + min + ':' + sec;</script>   
         <h2>Current Time<br>
-            <span id ="clock"> Clockkk here </span>
             
+            <div id="txt" class = "clock" onload="startTime()"></div>
         </h2>
         
+    </head>
+    
+    
+
+        
+        
+        </body>
         <img id = "tomatoImage" src= "https://grist.files.wordpress.com/2009/09/tomato.jpg" alt="tomato">
         <br>
         Select cycles
