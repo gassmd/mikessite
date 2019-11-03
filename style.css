@@ -1,35 +1,54 @@
 body{
-    background-color: rgb(168, 168, 168); 
+    background-image: linear-gradient(rgb(8, 156, 137), rgb(114, 189, 173)); 
+    font-size: large;
     font-family: 'Turret Road', cursive;
     color: rgb(245, 245, 245);
 }
 
+.bg{
+    background-image: url(images/newHorizonsBackground.jpeg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .page{
+    font-size: 80%;
     text-align: center;
+    padding-top: 60px;
+    padding-bottom: 1000px;
 }
 
 header{
-    font-size: 1000px;
+    font-size: 10px;
     line-height: 48px;
 }
 
 #tomatoImage{
     max-width:15em; 
+    text-align: left;
 }
 
 h1 {
     font-size: 70px;
     font-family: 'Turret Road', cursive;
-    color: rgb(4, 4, 51); 
-    padding: 50px; 
+    color: #182628; 
+    padding: 0px; 
 }
 
 h2 {
+    color: #c6dfa6;
     font-size: 30px;
     font-family: 'Turret Road', cursive;
-    color: rgb(255, 0, 0);
-    
+    margin: 0px 0px 0px 0px;
+    position: sticky;
+    top: 0;
+    padding-left: 80%;
+    text-align:center;
 }
+
+
 
 #clock{
     font-size: 40px;
@@ -38,3 +57,77 @@ h2 {
 .clock{
     font-size: 100px;
 }
+
+:root {
+    --mainColor: #f2f2f2;
+}
+
+h3 {
+    color: #a3df95;
+    float:
+    font-size: 25px;
+    margin: 0px 0px 0px 0px;
+    padding-left: 7px; 
+    padding-top: -30px;
+    text-align: left;
+    
+}
+
+h3.topLinks {
+    background:
+       linear-gradient(
+         to bottom, rgb(8, 156, 137) 25%,
+         rgb(28, 209, 185) 100%
+       );
+      background-position: 0px 50%;
+      background-repeat: repeat-x;
+      background-size: 0px 0px;
+      border-radius: 20px; 
+      display: inline;
+      font-family: 'Oswald', sans-serif;
+      padding-left: 28px;
+      padding-right: 30px;
+    text-decoration: none;
+    transition: background-size .7s; 
+    width: 20%; 
+    word-spacing: 1em; 
+  }
+
+h3.topLinks:hover {
+    background-size: 1% 100%;
+    border-radius: 20px;  
+  }
+
+h3.a, a:link, a:visited{
+    color: #a3df95; 
+    text-decoration: none; 
+}
+
+a:hover{
+    color: green; 
+    transition: color 1.0s; 
+    
+}
+
+.container{
+    margin-top: -30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 300px; 
+    width: 300px;
+    border-color #1995ad;
+    border-width: 2px;
+    border-radius: 50%;
+}
+
+img.contactLinks{
+    display: inline;
+    length : 20%;
+    margin-left: auto;
+    margin-right: auto;
+    width : 20%;
+    
+}
+
