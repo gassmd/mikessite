@@ -14,7 +14,7 @@ body{
 }
 
 .page{
-    font-size: 80%;
+    font-size: 100%;
     text-align: center;
     padding-top: 60px;
     padding-bottom: 1000px;
@@ -123,11 +123,13 @@ a:hover{
 }
 
 img.contactLinks{
-    display: inline;
+    
+    display: block;
     length : 20%;
     margin-left: auto;
     margin-right: auto;
-    width : 20%;
+    
+    width : 10%;
     
 }
 
