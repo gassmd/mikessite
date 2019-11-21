@@ -33,7 +33,7 @@ header{
 h1 {
     font-size: 70px;
     font-family: 'Turret Road', cursive;
-    color: #182628; 
+    color: #deeed6; 
     padding: 0px; 
 }
 
@@ -132,4 +132,17 @@ img.contactLinks{
     width : 10%;
     
 }
+
+#mailOnHover .text{
+    position: fixed;
+    bottom: 50%;
+    left: 45%;
+    visibility: hidden;
+}
+
+#mailOnHover:hover .text{
+    visibility: visible; 
+}
+
+
 
